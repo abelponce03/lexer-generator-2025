@@ -1,0 +1,8 @@
+
+#para compilar todos los archivos
+
+$ g++ -std=c++17 -I.   automata/lexer_dfa.cpp   automata/lexer_nfa.cpp   automata/nfa.cpp   automata/build_nfa.cpp   regex/regex_parser_driver.cpp   regex/simple_lexer.cpp   regex/regex_parser.tab.cpp  tests/complete_lexer_test.cpp   -o complete_lexer_test.exe
+
+#para compilar el AST
+
+bison -d -o regex_parser.tab.cpp regex_parser.y
